@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:white;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.box {
+    border: 6px solid grey;
+    padding: 20px;
+    width: 45%;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: white;
+}
+.box1 {
+    border: 6px solid grey;
+    padding: 20px;
+    width: 25%;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: white;
+}
+
+.product {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color:rgb(221, 208, 208);
+}
+
+
+.product-name, .product-price {
+    width: 30%;
+}
+
+.product-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(74, 178, 178);
+    border: 1px solid  black;
+    border-radius: 10px;
+}
+
+.product-controls button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+   font-size: large;
+    border-radius: 3px;
+    padding: 1px 5px;
+}
+
+.product-controls span {
+    margin: 0 5px;
+}
+
+.cart-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color:rgb(221, 208, 208);
+}
+
+h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+    background-color:rgb(221, 208, 208);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .box {
+        width: 90%; 
+    }
+
+    .box1 {
+        width: 80%; 
+    } 
+}
+@media  ( max-width: 768px){   .product{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color:rgb(221, 208, 208);
+       
+    
+
+}.product-controls span {
+    margin: 0 0px;
+}
+    
+}
